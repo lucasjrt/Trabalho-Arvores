@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1529418322 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"ABB.h"
+
+1529415289 c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\abb.h
+
+1529415626 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\abb.c
+	<stdlib.h>
+	<stdio.h>
+	<strings.h>
+	"ABB.h"
+
+1529416517 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\avl.c
+	<stdlib.h>
+	<stdio.h>
+	<strings.h>
+	"AVL.h"
+
+1529416306 c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\avl.h
+
+1529409648 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\arvore.c
+

@@ -4,7 +4,7 @@
 #include<string.h>
 #include<limits.h>
 #include<math.h>
-#include"arvore.h"
+#include"ABB.h"
 
 
 struct reg{
@@ -95,7 +95,9 @@ void mostrar_registro(Reg r){
 No *criar_no(){
     No *no;
     no = (No*)malloc(sizeof(No));
+    if(no==NULL)return NULL;
     no->reg = (Reg) malloc(sizeof(struct reg));
+    if(no->reg==NULL)return NULL;
     //no = (No*)malloc(sizeof(No));
     printf("Digite o nome: ");
     scanf("%s",no->reg->nome);
@@ -112,7 +114,9 @@ No *criar_no(){
 No *criar_no_temp(char *nome,char *curso,int idade){
     No *no;
     no = (No*)malloc(sizeof(No));
+    if(no==NULL)return NULL;
     no->reg = (Reg) malloc(sizeof(struct reg));
+    if(no->reg==NULL)return NULL;
     strcpy(no->reg->nome,nome);
     strcpy(no->reg->curso,curso);
     no->reg->idade = idade;
@@ -124,7 +128,9 @@ No *criar_no_temp(char *nome,char *curso,int idade){
 int insere_copia_ord(Arv *a,No *no){
     No *novoNo;
     novoNo = (No*)malloc(sizeof(No));
+    if(novoNo==NULL)return -1;
     novoNo->reg = (Reg)malloc(sizeof(struct reg));
+    if(novoNo->reg==NULL)return -1;
     novoNo->sae = NULL;
     novoNo->sad = NULL;
     novoNo->reg->idade = no->reg->idade;
@@ -413,3 +419,12 @@ void mostra_no(No *no){
 }
 
 
+int busca_bin(Arv a,int idade){
+    if(a==NULL)return 0;
+    if(a->reg->idade == idade){
+        return 1;
+    }
+    if(busca_bin(a->sae,idade))return 1;
+    return busca_bin(a->sad,idade);
+    return 0;
+}

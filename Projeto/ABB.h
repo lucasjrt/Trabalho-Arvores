@@ -1,6 +1,5 @@
 
 
-typedef struct reg Estrutura;
 typedef struct reg *Reg;
 typedef struct no No;
 typedef struct no *Arv;

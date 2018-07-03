@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "arvore.h"
+#include "ABB.h"
 
 int menu_principal(){
     system("cls");
@@ -16,7 +16,8 @@ int menu_principal(){
     printf("9 - Verificar se a arvore eh completa ou nao\n");
     printf("10 - Mostrar a altura da arvore\n");
     printf("11 - Juntar duas arvores (Para isso sera necessario inserir dados para outra arvore)\n");
-    printf("12 - Sair\n");
+    printf("12 - Procurar se existe alguem com determinada idade\n");
+    printf("13 - Sair\n");
     scanf("%d",&opcao);
     return opcao;
 }
@@ -25,12 +26,15 @@ int main(){
     Arv a[10];
     int quantidade_arvores = 0;
     int i,opcao=0,opcao2,opcao3,opcao4,check;
-    while(opcao!=12){
+
+    while(opcao!=13){
         opcao = menu_principal();
+        if(opcao<1||opcao>12)printf("Opcao invalida\n");
         if(opcao==1){
             if(quantidade_arvores<10){
                 a[quantidade_arvores] = cria_arvore();
                 quantidade_arvores++;
+                printf("Cadastro criado com sucesso\n");
             }
             else printf("Erro, nao eh possivel criar mais nenhum cadastro\n");
         }
@@ -251,6 +255,32 @@ int main(){
                         quantidade_arvores++;
                     }
                     else printf("Cadastro digitado nao existe\n");
+            }
+        }
+        if(opcao==12){
+            if(quantidade_arvores==0)printf("Erro, nenhum cadastro existente\n");
+            else{
+            if(quantidade_arvores==1){
+                    printf("Qual eh a idade que deseja procurar\n");
+                    scanf("%d",&opcao3);
+                    if(busca_bin(a[0],opcao3))printf("O valor foi encontrado\n");
+                    else printf("O valor nao foi encontrado\n");
+                }
+                else {
+                    for(i=0;i<quantidade_arvores;i++){
+                        printf("Cadastro %d:\n",i);
+                    }
+                    printf("Qual cadastro deseja analisar? ");
+                    scanf("%d",&opcao2);
+                    if(opcao2>=0&&opcao2<quantidade_arvores){
+                        printf("Qual eh a idade que deseja procurar\n");
+                        scanf("%d",&opcao3);
+                        if(busca_bin(a[opcao2],opcao3))printf("O valor foi encontrado\n");
+                        else printf("O valor nao foi encontrado\n");
+                    }
+                    else printf("Cadastro digitado nao existe\n");
+                }
+
             }
         }
 

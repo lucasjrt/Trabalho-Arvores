@@ -1,25 +1,28 @@
 # depslib dependency file v1.0
-1529418322 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\main.c
+1530581974 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\main.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
+	<windows.h>
 	"ABB.h"
+	"AVL.h"
 
 1529415289 c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\abb.h
 
-1529415626 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\abb.c
+1530388994 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\abb.c
 	<stdlib.h>
 	<stdio.h>
 	<strings.h>
 	"ABB.h"
 
-1529416517 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\avl.c
+1530581621 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\avl.c
 	<stdlib.h>
 	<stdio.h>
-	<strings.h>
+	<string.h>
+	<math.h>
 	"AVL.h"
 
-1529416306 c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\avl.h
+1530581320 c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\avl.h
 
 1529409648 source:c:\users\lucas justino\documents\2018-1\aed2\trabalho-arvores\projeto\arvore.c
 

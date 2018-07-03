@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1529516839 source:c:\users\lucas justino\documents\2018-1\aed2\listas Árvores\arvore binaria\arvorebinaria.c
+	<stdlib.h>
+	<stdio.h>
+	"ArvoreBinaria.h"
+
+1529516678 c:\users\lucas justino\documents\2018-1\aed2\listas Árvores\arvore binaria\arvorebinaria.h
+
+1529519591 source:c:\users\lucas justino\documents\2018-1\aed2\listas Árvores\arvore binaria\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArvoreBinaria.h"
+

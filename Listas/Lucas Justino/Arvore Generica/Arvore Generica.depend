@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1529494832 source:c:\users\lucas justino\documents\2018-1\aed2\listas Árvores\arvore generica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArvoreGenerica.h"
+
+1529512321 c:\users\lucas justino\documents\2018-1\aed2\listas Árvores\arvore generica\arvoregenerica.h
+
+1529494508 source:c:\users\lucas justino\documents\2018-1\aed2\listas Árvores\arvore generica\arvoregenerica.c
+	<stdlib.h>
+	<stdio.h>
+	"ArvoreGenerica.h"
+

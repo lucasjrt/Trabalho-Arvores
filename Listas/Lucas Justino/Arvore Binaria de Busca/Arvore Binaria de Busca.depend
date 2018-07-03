@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1530622043 source:c:\users\lucas justino\documents\random projects\arvore binaria de busca\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ABB.h"
+
+1530622354 c:\users\lucas justino\documents\random projects\arvore binaria de busca\abb.h
+
+1530622347 source:c:\users\lucas justino\documents\random projects\arvore binaria de busca\abb.c
+	<stdio.h>
+	<stdlib.h>
+	"ABB.h"
+

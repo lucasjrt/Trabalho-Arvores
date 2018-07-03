@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1530551079 source:c:\users\samsung\desktop\tad Árvore\arvore generica\arvore.c
+	<stdio.h>
+	<stdlib.h>
+	"Arvore.h"
+
+1530473550 c:\users\samsung\desktop\tad Árvore\arvore generica\arvore.h
+
+1530473485 source:c:\users\samsung\desktop\tad Árvore\arvore generica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Arvore.h"
+
